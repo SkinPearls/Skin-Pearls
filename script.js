@@ -1,66 +1,43 @@
-// Sample product data (replace with your actual data)
-const products = [
-    {
-        name: 'Herbal Product',
-        image: 'herbal.jpg', 
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    },
-    {
-        name: 'Moisturizing Cream',
-        image: 'moisturizing.jpg', 
-        description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    },
-    {
-        name: 'Anti-Aging Serum',
-        image: 'anti-aging.jpg', 
-        description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
-    },
-    {
-        name: 'Sunscreen Lotion',
-        image: 'sunscreen.jpg', 
-        description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-    },
-    {
-        name: 'Cleansing Gel',
-        image: 'cleansing.jpg', 
-        description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    },
-    {
-        name: 'Night Cream',
-        image: 'night-cream.jpg', 
-        description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.'
-    },
-    {
-        name: 'Night Cream',
-        image: 'crema.jpg', 
-        description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.'
-    }
-    // Add more products as needed
-];
+// scripts.js
 
-// Function to generate HTML for each product
-function generateProductHTML(product) {
-    return `
-        <div class="product">
-            <img src="${product.image}" alt="${product.name}">
-            <h2>${product.name}</h2>
-            <p>${product.description}</p>
-        </div>
-    `;
+function showSkinProducts() {
+    // Redirect to skin-products.html
+    window.location.href = "skin-products.html";
 }
 
-// Function to display products on the page
-function displayProducts() {
-    const productContainer = document.getElementById('product-container');
+function showHairProducts() {
+    // Redirect to hair-products.html
+    window.location.href = "hair-products.html";
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const headingSizeSelect = document.getElementById('heading-size');
+    const headingColorInput = document.getElementById('heading-color');
+    const headingAlignmentSelect = document.getElementById('heading-alignment');
+    const mainHeader = document.querySelector('header h1');
 
-    // Generate HTML for each product and append to the main container
+    // Event listeners for controls
+    headingSizeSelect.addEventListener('change', function() {
+        mainHeader.style.fontSize = this.value;
+    });
+
+    headingColorInput.addEventListener('input', function() {
+        mainHeader.style.color = this.value;
+    });
+
+    headingAlignmentSelect.addEventListener('change', function() {
+        mainHeader.style.textAlign = this.value;
+    });
+});
+function searchProducts() {
+    const query = document.getElementById('search-input').value.toLowerCase();
+    const products = document.querySelectorAll('.product');
+    
     products.forEach(product => {
-        const productHTML = generateProductHTML(product);
-        productContainer.innerHTML += productHTML;
+        const productName = product.querySelector('h3').textContent.toLowerCase();
+        if (productName.includes(query)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
     });
 }
-
-// Wait for the DOM content to load before executing JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-    displayProducts();
-});
