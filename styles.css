@@ -11,7 +11,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center; /* Adjust the position as needed */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
