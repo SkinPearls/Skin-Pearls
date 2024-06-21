@@ -24,36 +24,31 @@ body {
     color: #fff;
     padding:  40px;
     text-align: center;
-font-size: 15px;
+font-size: 10px;
+margin-bottom: 40px;
+
 }
 
 .main-header h1 {
     margin: 0;
 }
 .quote {
-    background-color: #fff; /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     color: #333; /* Text color */
     border: 2px solid #609; /* Border color */
     padding: 20px;
-    margin: 30px auto 0; /* Center the quote and create a gap from the header */
+    margin: 0px auto 0; /* Center the quote and create a gap from the header */
+margin-bottom: 40px;
     width: 100%; /* Width of the quote box */
-    max-width: 200px; /* Maximum width of the quote box */
+    max-width: 350px; /* Maximum width of the quote box */
     text-align: center;
-    font-size: 10px; /* Font size */
-    border-radius: 25px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
 }
 
-.quote-content {
-    max-width: 100px;
-    margin: 0 auto;
-}
 
-.quote blockquote {
-    font-size: 24px;
-    font-style: italic;
-    margin: 0;
-    color: #333;
-}
 .skin-products-header {
     background-color: #609;
     color: #fff;
@@ -89,7 +84,7 @@ main {
 }
 
 .option {
-    margin-bottom: 30px; /* Adjust the gap between options */
+    margin-bottom: 40px; /* Adjust the gap between options */
     text-align: center;
 }
 
