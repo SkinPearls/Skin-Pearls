@@ -50,12 +50,15 @@ margin-bottom: 20px;
 }
 
 .header-subtitle p {
-    margin-left: 0 10px; /* Adjust space between icon and text */
+    color: #fff;
+    font-size: 14px; /* Adjust font size */
+    margin: 0 8px; /* Adjust spacing around the phone number */
 }
+
 .header-subtitle i {
-    font-size: 15px; /* Adjust icon size */
-    margin-right: px; /* Adjust spacing between icons */
-    color: #fff; /* Icon color */
+    font-size: 15px;
+    color: #fff;
+    margin: 0 5px; /* Adjust spacing around icons */
 }
 .header-subtitle .bi-instagram {
     margin-left: 70px; /* Adjust space between phone number and Instagram icon */
