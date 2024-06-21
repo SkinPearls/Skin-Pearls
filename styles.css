@@ -36,15 +36,17 @@ margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 485px; /* Adjust distance from the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%);
+    position: relative;
+    bottom: auto; /* Adjust distance from the bottom */
+    left: 0%; /* Center horizontally */
+    transform: none;
     font-size: 14px; /* Adjust font size as needed */
     color: #fff; /* Adjust color as needed */
     width: 100%; /* Ensure full width */
     flex-wrap: nowrap; /* Prevent wrapping */
-
+    flex-direction: row; /* Allow subtitle to wrap naturally */
+    justify-content: center; /* Center horizontally */
+    
 }
 
 .header-subtitle p {
@@ -245,8 +247,9 @@ main {
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    .product {
-        width: 100%; /* Make products full width on smaller screens */
+    .option {
+        flex: 1 1 100%; /* Make options full width on smaller screens */
+        max-width: 100%;
     }
 
     header {
@@ -276,5 +279,14 @@ main {
 
     header {
         font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .header-subtitle p {
+        font-size: 12px; /* Example of adjusting font size on smaller screens */
+    }
+
+    .quote {
+        font-size: 16px; /* Example of adjusting font size on smaller screens */
     }
 }
