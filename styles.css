@@ -37,7 +37,7 @@ margin-bottom: 20px;
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 550px; /* Adjust distance from the bottom */
+    bottom: 500px; /* Adjust distance from the bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%);
     font-size: 14px; /* Adjust font size as needed */
