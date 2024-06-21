@@ -37,7 +37,7 @@ margin-bottom: 20px;
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 480px; /* Adjust distance from the bottom */
+    bottom: 485px; /* Adjust distance from the bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%);
     font-size: 14px; /* Adjust font size as needed */
@@ -61,7 +61,8 @@ margin-bottom: 20px;
 
 .header-subtitle p {
     margin: 0px;
-    color: #fff;
+    color: #fff; /* Set the color to your desired text color */
+    text-decoration: none; /* Remove any default text decoration */
 }
 .quote {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
