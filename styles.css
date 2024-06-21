@@ -39,7 +39,7 @@ font-size: 15px;
     width: 100%; /* Width of the quote box */
     max-width: 200px; /* Maximum width of the quote box */
     text-align: center;
-    font-size: 18px; /* Font size */
+    font-size: 10px; /* Font size */
     border-radius: 25px; /* Rounded corners */
 }
 
@@ -89,7 +89,7 @@ main {
 }
 
 .option {
-    margin-bottom: 40px; /* Adjust the gap between options */
+    margin-bottom: 30px; /* Adjust the gap between options */
     text-align: center;
 }
 
