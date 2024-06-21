@@ -53,11 +53,11 @@ margin-bottom: 20px;
     color: #fff; /* Icon color */
 }
 .header-subtitle .bi-instagram {
-    margin-left: 30px; /* Adjust space between phone number and Instagram icon */
+    margin-left: 70px; /* Adjust space between phone number and Instagram icon */
 }
 
 .header-subtitle p {
-    margin: 10px;
+    margin: 0px;
     color: #fff;
 }
 .quote {
