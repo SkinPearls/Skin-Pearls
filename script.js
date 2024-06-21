@@ -41,3 +41,14 @@ function searchProducts() {
         }
     });
 }
+// Add event listener for key press in the search input field
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+
+    searchInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent the default form submission behavior
+            searchProducts(); // Call your search function
+        }
+    });
+});
