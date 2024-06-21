@@ -32,6 +32,31 @@ margin-bottom: 20px;
 .main-header h1 {
     margin: 0;
 }
+.header-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 550px; /* Adjust distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    font-size: 14px; /* Adjust font size as needed */
+    color: #fff; /* Adjust color as needed */
+}
+
+.header-subtitle p {
+    margin-left: 5px; /* Adjust space between icon and text */
+}
+.header-subtitle i {
+    font-size: 15px; /* Adjust icon size */
+    margin-right: px; /* Adjust spacing between icons */
+    color: #fff; /* Icon color */
+}
+
+.header-subtitle p {
+    margin: 10px;
+    color: #fff;
+}
 .quote {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     color: #333; /* Text color */
