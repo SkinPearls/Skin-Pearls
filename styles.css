@@ -284,12 +284,3 @@ main {
         font-size: 20px;
     }
 }
-@media (max-width: 480px) {
-    .header-subtitle p {
-        font-size: 12px; /* Example of adjusting font size on smaller screens */
-    }
-
-    .quote {
-        font-size: 16px; /* Example of adjusting font size on smaller screens */
-    }
-}
