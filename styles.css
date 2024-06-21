@@ -44,8 +44,8 @@ margin-bottom: 20px;
     color: #fff; /* Adjust color as needed */
     width: 100%; /* Ensure full width */
     flex-wrap: nowrap; /* Prevent wrapping */
-    flex-direction: row; /* Allow subtitle to wrap naturally */
     justify-content: center; /* Center horizontally */
+	
     
 }
 
