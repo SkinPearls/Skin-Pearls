@@ -44,14 +44,13 @@ margin-bottom: 20px;
     color: #fff; /* Adjust color as needed */
     width: 100%; /* Ensure full width */
     flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: center; /* Center horizontally */
     top: 20px;
-	
+    	
     
 }
 
 .header-subtitle p {
-    margin-left: 0 5px; /* Adjust space between icon and text */
+    margin-left: 0 10px; /* Adjust space between icon and text */
 }
 .header-subtitle i {
     font-size: 15px; /* Adjust icon size */
