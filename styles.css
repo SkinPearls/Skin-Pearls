@@ -5,17 +5,16 @@ body, h1, h2, h3, p, ul, li {
 }
 
 /* Set global font family and background */
-html, body {
-    height: 100%; /* Ensure the background covers the whole page */
+body {
     font-family: Arial, sans-serif;
     background-image: url('background.jpg'); /* Replace with your background image path */
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
     margin: 0;
 }
 
