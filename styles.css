@@ -42,6 +42,8 @@ margin-bottom: 20px;
     transform: translateX(-50%);
     font-size: 14px; /* Adjust font size as needed */
     color: #fff; /* Adjust color as needed */
+    flex-wrap: nowrap; /* Prevent wrapping */
+
 }
 
 .header-subtitle p {
