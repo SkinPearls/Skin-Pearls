@@ -253,7 +253,8 @@ main {
         font-size: 24px;
     }
 
-    .search-container input, .search-container button {
+    .search-container input,
+    .search-container button {
         font-size: 10px;
     }
 }
@@ -276,5 +277,8 @@ main {
 
     header {
         font-size: 20px;
+    }
+.product {
+        width: 100%; /* Ensure products are full width on small screens */
     }
 }
