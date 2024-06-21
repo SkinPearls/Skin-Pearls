@@ -29,20 +29,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 function searchProducts() {
-    const query = document.getElementById('search-input').value.toLowerCase();
+    const input = document.getElementById('search-input').value.toLowerCase();
     const products = document.querySelectorAll('.product');
-    
+
     products.forEach(product => {
         const productName = product.querySelector('h3').textContent.toLowerCase();
-        if (productName.includes(query)) {
-            product.style.display = 'block';
+        if (productName.includes(input)) {
+            product.style.display = 'block'; // Ensure product is displayed
         } else {
-            product.style.display = 'none';
+            product.style.display = 'none'; // Hide product if it doesn't match search
         }
     });
 }
-<script>
-function goToProductPage(page) {
-    window.location.href = product1.html;
-}
-</script>

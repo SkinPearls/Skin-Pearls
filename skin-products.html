@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skin Products</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Ensure script is deferred to load after DOM -->
 </head>
 <body>
     <header class="skin-products-header">
         <h1>Skin Products</h1>
-     <div class="search-container">
+        <div class="search-container">
             <input type="text" id="search-input" placeholder="Search products...">
             <button onclick="searchProducts()">Search</button>
         </div>
@@ -23,7 +24,6 @@
                     <h3>L'DORA HERBAL<br>MOISTURIZING CREAM<br>FOR HANDAND FACE, 50 ml</h3>
                     <h3>کریم لیدورا بالأعشاب منعم  <br>منعم الید و الوجه 50 ملل</h3>
                     <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Buy Now</button>
-                    <button class="info-button" onclick="window.location.href='product1.html'">More Info</button>
 
 
                 </div>
@@ -163,6 +163,5 @@
     <footer class="skin-products-footer">
         <p>@skin__pearls</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
