@@ -37,14 +37,14 @@ margin-bottom: 20px;
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 485px; /* Adjust distance from the bottom */
+    bottom: auto; /* Adjust distance from the bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%);
     font-size: 14px; /* Adjust font size as needed */
     color: #fff; /* Adjust color as needed */
     width: 100%; /* Ensure full width */
     flex-wrap: nowrap; /* Prevent wrapping */
-
+    padding: 15px;
 }
 
 .header-subtitle p {
