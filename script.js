@@ -41,3 +41,8 @@ function searchProducts() {
         }
     });
 }
+<script>
+function goToProductPage(page) {
+    window.location.href = product1.html;
+}
+</script>
