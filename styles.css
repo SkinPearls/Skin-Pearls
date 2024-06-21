@@ -45,6 +45,7 @@ margin-bottom: 20px;
     width: 100%; /* Ensure full width */
     flex-wrap: nowrap; /* Prevent wrapping */
     justify-content: center; /* Center horizontally */
+    top: 20px;
 	
     
 }
