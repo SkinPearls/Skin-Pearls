@@ -8,9 +8,10 @@ body, h1, h2, h3, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     background-image: url('background.jpg'); /* Replace with your background image path */
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center center; /* Adjust the position as needed */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
