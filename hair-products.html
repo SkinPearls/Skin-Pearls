@@ -10,12 +10,12 @@
 <body>
     <header class="hair-products-header">
         <h1>Hair Products</h1>
-        <div class="search-container">
+         <div class="search-container">
             <form id="search-form">
         <input type="text" id="search-input" placeholder="Search products...">
         <button type="button" onclick="searchProducts()">Search</button>
     </form>
-        </div>
+        
     </header>
     <main>
         <section class="hair-products" id="hair-products">
@@ -148,6 +148,10 @@
                     <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
 
                 </div>
+</div>
+<div id="no-results-message" style="display: none; text-align: center; color: black;font-size: 10px;">
+"Oops! No matching products found."
+</div>
         </section>
     </main>
     <footer class="skin-products-footer">

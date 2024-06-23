@@ -29,17 +29,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 function searchProducts() {
-    const input = document.getElementById('search-input').value.toLowerCase();
+    const input = document.getElementById('search-input').value.trim().toLowerCase();
     const products = document.querySelectorAll('.product');
+    let found = false; // Flag to check if any products match the search
 
     products.forEach(product => {
         const productName = product.querySelector('h3').textContent.toLowerCase();
         if (productName.includes(input)) {
             product.style.display = 'block'; // Ensure product is displayed
+            found = true; // Set found to true if at least one product matches
         } else {
             product.style.display = 'none'; // Hide product if it doesn't match search
         }
     });
+
+    // Show message if no products match the search
+    const noResultsMessage = document.getElementById('no-results-message');
+    if (!found) {
+        noResultsMessage.style.display = 'block'; // Display the message
+    } else {
+        noResultsMessage.style.display = 'none'; // Hide the message if products are found
+    }
 }
 // Add event listener for key press in the search input field
 document.addEventListener('DOMContentLoaded', function() {
@@ -52,3 +62,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
