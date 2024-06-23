@@ -5,65 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hair Products</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Ensure script is deferred to load after DOM -->
 </head>
 <body>
     <header class="hair-products-header">
         <h1>Hair Products</h1>
-     <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search products...">
-            <button onclick="searchProducts()">Search</button>
+        <div class="search-container">
+            <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search products...">
+        <button type="button" onclick="searchProducts()">Search</button>
+    </form>
         </div>
     </header>
     <main>
         <section class="hair-products" id="hair-products">
             <!-- Row 1 -->
             <div class="product-row">
-                <div class="product">
-                    <img src="L'DORA HERBAL MOISTURIZING CREAM FOR HAND AND FACE, 50 ml.jpg" alt="L'DORA HERBAL MOISTURIZING CREAM FOR HAND AND FACE, 50 ml">
-                    <h3>L'DORA HERBAL<br>MOISTURIZING CREAM<br>FOR HANDAND FACE, 50 ml</h3>
-                    <h3>کریم لیدورا بالأعشاب منعم  <br>منعم الید و الوجه 50 ملل</h3>
+               <div class="product">
+                    <img src="L'DORA HERBAL MOISTURIZING & NOURISHING HAIR MASK, 200 ML.jpg" alt="L'DORA HERBAL MOISTURIZING & NOURISHING HAIR MASK, 200 ML">
+                    <h3>L'DORA HERBAL MOISTURIZING & NOURISHING HAIR MASK, 200 ML</h3>
+                    <h3>ماسك الأعشاب المنعم و المقوي للشعر لیدورا هربال 200 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
 
                 </div>
-                <div class="product">
-                    <img src="L'DORA ANTI-AGEING EYE CREAM FOR DARK CIRCLES, 30 ml.jpg" alt="L'DORA ANTI-AGEING EYE CREAM FOR DARK CIRCLES, 30 ml">
-                    <h3>L'DORA ANTI-AGEING<br>EYE CREAM FOR<br>DARK CIRCLES, 30 ml</h3>
-                    <h3>کریم العين لیدورا لعلاج الهالات السوداء<br> و محاربة الشیخوخة 30 ملل</h3>
+                  <div class="product">
+                    <img src="L’DORA HERBAL SHAMPOO FOR NORMAL HAIR, 300 ML.jpg" alt="L’DORA HERBAL SHAMPOO FOR NORMAL HAIR, 300 ML">
+                    <h3>L’DORA HERBAL SHAMPOO FOR NORMAL HAIR, 300 ML</h3>
+                    <h3>شامبو بالأعشاب للشعر العادي ليدورا هربال 300 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
+
                 </div>
             </div>
             <!-- Row 2 -->
             <div class="product-row">
                 <div class="product">
-                    <img src="L'DORA SEA OYSTER SCRUB MASK, 150 ml.jpg" alt="L'DORA SEA OYSTER SCRUB MASK, 150 ml">
-                    <h3>L'DORA SEA OYSTER<br>SCRUB MASK, 150 ml</h3>
-                    <h3>ماسك(قناع) سکراب لیدورا یحتوي علی<br>الصدف البحري 150 ملل</h3>
+                    <img src="L’DORA HERBAL DAILY HAIR SHAMPOO, 200 ML.jpg" alt="L’DORA HERBAL DAILY HAIR SHAMPOO, 200 ML">
+                    <h3>L’DORA HERBAL DAILY HAIR SHAMPOO, 200 ML</h3>
+                    <h3>شامبو ليدورا هربال الیومي للشعر 200 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
 
                 </div>
-                <div class="product">
-                    <img src="L'DORA ADVANCED FOOT CREAM, 100 gr.jpg" alt="L'DORA ADVANCED FOOT CREAM, 100 gr">
-                    <h3>L'DORA ADVANCED<br>FOOT CREAM, 100 gr</h3>
-                    <h3>کریم لتشققات القدمین متعدد <br> الإستعمالات من لیدورا 100 غرام</h3>
+                  <div class="product">
+                    <img src="L'DORA HERBAL SHAMPOO FOR OILY HAIR, 300 ML.jpg" alt="L'DORA HERBAL SHAMPOO FOR OILY HAIR, 300 ML">
+                    <h3>L'DORA HERBAL SHAMPOO FOR OILY HAIR, 300 ML</h3>
+                    <h3>شامبو بالأعشاب للشعر الدهني ليدورا هربال 300 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
 
                 </div>
             </div>
             <!-- Row 3 -->
             <div class="product-row">
                 <div class="product">
-                    <img src="L'DORA PEEL-OFF MASK, 150 ml.jpg" alt="L'DORA PEEL-OFF MASK, 150 ml">
-                    <h3>L'DORA PEEL-OFF<br>MASK, 150 ml</h3>
-                    <h3> ماسك(قناع) للتقشير<br>ليدورا 150 ملل</h3>
-                </div>
-                <div class="product">
-                    <img src="L'DORA LIFTING & FIRMING CREAM FOR FACE AND NECK WITH MASSAGER, 100 ml.jpg" alt="L'DORA LIFTING & FIRMING CREAM FOR FACE AND NECK WITH MASSAGER, 100 ml">
-                    <h3>L'DORA LIFTING &<br>FIRMING CREAM FOR FACE<br>AND NECK WITH MASSAGER, 100 ml</h3>
+                    <img src="L’DORA HERBAL KERATIN AND PROTEIN HAIR MASK , 200 ML.jpg" alt="L’DORA HERBAL KERATIN AND PROTEIN HAIR MASK , 200 ML">
+                    <h3>L’DORA HERBAL KERATIN AND PROTEIN HAIR MASK , 200 ML</h3>
+                    <h3>ماسک ليدورا هربال الطبیعي للشعر بالبروتین و الکیراتین 200 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
 
-                    <h3>کریم لشد الوجه و الرقبة بالمدلك<br> لیدورا 100 ملل</h3>
+                </div>
+                  <div class="product">
+                    <img src="L’DORA HERBAL ANTI HAIR LOSS AND HAIR GROWTH ENHANCER TONIC, 40 ML.jpg" alt="L’DORA HERBAL ANTI HAIR LOSS AND HAIR GROWTH ENHANCER TONIC, 40 ML">
+                    <h3>L’DORA HERBAL ANTI HAIR LOSS AND HAIR GROWTH ENHANCER TONIC, 40 ML</h3>
+                    <h3>تونيك الأعشاب لیدورا هربال لتقوية الشعر و مضاد لتساقط الشعر 40 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
+
                 </div>
             </div>
+	    <!-- Row 4 -->
+            <div class="product-row">
+                <div class="product">
+                    <img src="L’DORA HERBAL EYEBROW GROWTH ENHANCER TONIC OIL, 40 ML.jpg" alt="L’DORA HERBAL EYEBROW GROWTH ENHANCER TONIC OIL, 40 ML">
+                    <h3>L’DORA HERBAL EYEBROW GROWTH ENHANCER TONIC OIL, 40 ML</h3>
+                    <h3>تونيك الأعشاب ليدورا هربال لتقوية الحواجب 40 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
+
+                </div>
+                  <div class="product">
+                    <img src="L’DORA CARE ARGAN OIL, 50 ML.jpg" alt="L’DORA CARE ARGAN OIL, 50 ML">
+                    <h3>L’DORA CARE ARGAN OIL, 50 ML</h3>
+                    <h3>زيت أرغان ليدورا كير 50 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
+
+                </div>
+            </div>
+	    <!-- Row 5 -->
+	    <div class="product-row">
+                <div class="product">
+                    <img src="L’DORA CARE CAVIAR EXTRACT HAIR SERUM, 100 ML.jpg" alt="L’DORA CARE CAVIAR EXTRACT HAIR SERUM, 100 ML">
+                    <h3>L’DORA CARE CAVIAR EXTRACT HAIR SERUM, 100 ML</h3>
+                    <h3>ليدورا سیروم للشعر بخلاصة الكافيار 100 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
+
+                </div>
+                  <div class="product">
+                    <img src="L'DORA HAIR GROWTH BOOSTING TONIC WITH MALTODEXTRIN, 200 ML.jpg" alt="L'DORA HAIR GROWTH BOOSTING TONIC WITH MALTODEXTRIN, 200 ML">
+                    <h3>L'DORA HAIR GROWTH BOOSTING TONIC WITH MALTODEXTRIN, 200 ML</h3>
+                    <h3>تونیك لیدورا المقوي للشعر بمالتودکسترین 200 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
+
+                </div>
+            </div>
+            
+	    <!-- Row 6 -->
+            <div class="product-row">
+                <div class="product">
+                    <img src="L'DORA HERBAL ANTI-DANDRUFF SHAMPOO, 300 ML.jpg" alt="L'DORA HERBAL ANTI-DANDRUFF SHAMPOO, 300 ML">
+                    <h3>L'DORA HERBAL ANTI-DANDRUFF SHAMPOO, 300 ML</h3>
+                    <h3>شامبو ضد القشرة بالأعشاب ليدورا هربال 300 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
+
+                </div>
+                  <div class="product">
+                    <img src="L'DORA HERBAL SHAMPOO FOR DRY AND DAMAGED HAIR, 300 ml.jpg" alt="L'DORA HERBAL SHAMPOO FOR DRY AND DAMAGED HAIR, 300 ml">
+                    <h3>L'DORA HERBAL SHAMPOO FOR DRY AND DAMAGED HAIR, 300 ml</h3>
+                    <h3>شامبو بالأعشاب للشعر الجاف والمتضرر ليدورا هربال 300 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
+
+                </div>
+            </div>
+	    <!-- Row 7 -->
+            <div class="product-row">
+                <div class="product">
+                    <img src="L’DORA CARE HAIR SOFTENING & STRAIGHTENING CREAM, 200 ML.jpg" alt="L’DORA CARE HAIR SOFTENING & STRAIGHTENING CREAM, 200 ML">
+                    <h3>L’DORA CARE HAIR SOFTENING & STRAIGHTENING CREAM, 200 ML</h3>
+                    <h3>بلسم ومملس للشعر ليدورا كير 200 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
+
+                </div>
+                  <div class="product">
+                    <img src="L'DORA KERATIN HAIR GROWTH BOOSTER SHAMPOO, FOR MEN, 380 ML.jpg" alt="L'DORA KERATIN HAIR GROWTH BOOSTER SHAMPOO, FOR MEN, 380 ML">
+                    <h3>L'DORA KERATIN HAIR GROWTH BOOSTER SHAMPOO, FOR MEN, 380 ML</h3>
+                    <h3>شامبو رجالي مقوى لنمو الشعر بالکراتین لیدورا 380 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
+
+                </div>
+            </div>
+	    <!-- Row 8 -->
+            <div class="product-row">
+                <div class="product">
+                    <img src="L'DORA KERATIN HAIR GROWTH BOOSTER SHAMPOO, FOR WOMEN, 380 ML.jpg" alt="L'DORA KERATIN HAIR GROWTH BOOSTER SHAMPOO, FOR WOMEN, 380 ML">
+                    <h3>L'DORA KERATIN HAIR GROWTH BOOSTER SHAMPOO, FOR WOMEN, 380 ML</h3>
+                    <h3>شامبو نسائي مقوى لنمو الشعر بالکراتین لیدورا 380 ملل</h3>
+                    <button class="contact-button" onclick="window.location.href='https://www.instagram.com/skin__pearls/'">Order Now</button>
+
+                </div>
         </section>
     </main>
-    <footer class="hair-products-footer">
+    <footer class="skin-products-footer">
         <p>@skin__pearls</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
