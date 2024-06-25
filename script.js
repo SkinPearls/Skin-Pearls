@@ -63,20 +63,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 // JavaScript for accordion functionality
-document.addEventListener("DOMContentLoaded", function() {
-    const accordionHeaders = document.querySelectorAll(".accordion-header");
+// JavaScript to toggle accordion functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionItems = document.querySelectorAll('.accordion-item');
 
-    accordionHeaders.forEach(header => {
-        header.addEventListener("click", function() {
-            // Hide all accordion bodies
-            const allAccordionItems = document.querySelectorAll(".accordion-item");
-            allAccordionItems.forEach(item => {
-                item.classList.remove("active");
+            accordionItems.forEach(item => {
+                item.querySelector('.accordion-header').addEventListener('click', function () {
+                    item.classList.toggle('active');
+                    const accordionBody = item.querySelector('.accordion-body');
+                    accordionBody.classList.toggle('active');
+                });
             });
-
-            // Show only the clicked accordion body
-            const accordionItem = this.parentElement; // Get parent .accordion-item
-            accordionItem.classList.toggle("active"); // Toggle .active class on accordion item
         });
-    });
-});
