@@ -32,6 +32,22 @@
         </div>
     </div>
 </div>
+ <script>
+        // JavaScript to handle accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    // Toggle accordion-body display
+                    this.nextElementSibling.classList.toggle('active');
+
+                    // Toggle active class on accordion-header
+                    this.classList.toggle('active');
+                });
+            });
+        });
+    </script>
         </section>
     </main>
     <footer class="skin-products-footer">
