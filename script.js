@@ -62,16 +62,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
+// JavaScript for accordion functionality
+document.addEventListener("DOMContentLoaded", function() {
+    const accordionHeaders = document.querySelectorAll(".accordion-header");
 
     accordionHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-            const accordionItem = this.parentElement;
-            accordionItem.classList.toggle('active');
+        header.addEventListener("click", function() {
+            // Hide all accordion bodies
+            const allAccordionItems = document.querySelectorAll(".accordion-item");
+            allAccordionItems.forEach(item => {
+                item.classList.remove("active");
+            });
+
+            // Show only the clicked accordion body
+            const accordionItem = this.parentElement; // Get parent .accordion-item
+            accordionItem.classList.toggle("active"); // Toggle .active class on accordion item
         });
     });
 });
-</script>
