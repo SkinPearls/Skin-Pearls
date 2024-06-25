@@ -287,3 +287,55 @@ main {
     display: block; /* Ensure image is treated as a block element */
     margin: auto; /* Center the image horizontally */
 }
+/* Product Info Page Styles */
+.product-details img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image is responsive */
+    margin: 0 auto 20px; /* Center the image and add bottom margin */
+}
+
+.product-details {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion-header img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-body {
+    display: none;
+    padding: 15px;
+    background: #f7f7f7;
+}
+
+.accordion-item.active .accordion-body {
+    display: block;
+}
