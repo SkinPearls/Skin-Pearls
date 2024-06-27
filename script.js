@@ -1,8 +1,13 @@
-// scripts.js
+// script.js
 
 function showSkinProducts() {
     // Redirect to skin-products.html
     window.location.href = "skin-products.html";
+}
+
+function showHairProducts() {
+    // Redirect to hair-products.html
+    window.location.href = "hair-products.html";
 }
 
 function showHairProducts() {
@@ -75,3 +80,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         });
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM fully loaded and parsed');
+    const headingSizeSelect = document.getElementById('heading-size');
+    console.log(headingSizeSelect); // Check if element is correctly selected
+    
+    // Your event listeners and other JavaScript code here
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.contact-button');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const product = button.closest('.product');
+            const productName = product.dataset.name;
+            const fileId = product.dataset.fileId;
+            const productImageUrl = encodeURIComponent(product.querySelector('img').src);
+            const phoneNumber = '96171653297'; // Replace with your WhatsApp phone number
+
+            // Construct the WhatsApp message with product details
+            const message = `I'm interested in placing an order for the following product:\n\nProduct Name: ${productName}\nProduct Image: ${decodeURIComponent(productImageUrl)}`;
+
+            // Encode the message for including in the WhatsApp URL
+            const encodedMessage = encodeURIComponent(message);
+
+            // Redirect to WhatsApp with the encoded message
+            window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        });
+    });
+});
