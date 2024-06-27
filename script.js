@@ -92,13 +92,13 @@ document.addEventListener('DOMContentLoaded', function() {
     buttons.forEach(button => {
         button.addEventListener('click', function() {
             const product = button.closest('.product');
-            const productName = product.dataset.name;
+            const productName = product.querySelector('h3').textContent.trim();
             const fileId = product.dataset.fileId;
             const productImageUrl = encodeURIComponent(product.querySelector('img').src);
             const phoneNumber = '96171653297'; // Replace with your WhatsApp phone number
 
             // Construct the WhatsApp message with product details
-            const message = `I'm interested in placing an order for the following product:\n\nProduct Name: ${productName}\nProduct Image: ${decodeURIComponent(productImageUrl)}`;
+            const message = `I'm interested in placing an order for the following product:\n${productName}\n ${decodeURIComponent(productImageUrl)}`;
 
             // Encode the message for including in the WhatsApp URL
             const encodedMessage = encodeURIComponent(message);
