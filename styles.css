@@ -370,3 +370,6 @@ accordion {
         .accordion-item.active .accordion-header::after {
             transform: translateY(-50%) rotate(90deg);
         }
+.button-container {
+    margin-top: 10px; /* Adjust spacing between the buttons */
+}
