@@ -20,7 +20,7 @@ body {
 
 /* Header styles */
 .main-header {
-    background-color: #609;
+    background-color: #89cff0;
     color: #fff;
     padding:  40px;
     text-align: center;
@@ -82,7 +82,7 @@ margin-bottom: 40px;
 
 
 .skin-products-header {
-    background-color: #609;
+    background-color: #89cff0 ;
     color: #fff;
     padding: 5px  ;
     text-align: center;
@@ -93,7 +93,7 @@ font-size: 20px;
     margin: 0;
 }
 .hair-products-header {
-    background-color: #609;
+    background-color: #89cff0 ;
     color: #fff;
     padding: 5px  ;
     text-align: center;
@@ -167,7 +167,7 @@ margin-top: 10px;
     font-size: 8px;
 }
 .contact-button {
-    background-color: #609; /* Button background color */
+    background-color: #89cff0 ; /* Button background color */
     color: #fff; /* Button text color */
     border: none; /* Remove border */
     padding: 10px 20px; /* Button padding */
@@ -179,13 +179,13 @@ margin-top: 10px;
 }
 
 .contact-button:hover {
-    background-color: #805; /* Button background color on hover */
+    background-color: #89cff0 ; /* Button background color on hover */
 }
 .contact-button.underline {
     text-decoration: underline; /* Underline text */
 }
 .more-info-button {
-    background-color: #609; /* Button background color */
+    background-color: #89cff0 ; /* Button background color */
     color: #fff; /* Button text color */
     border: none; /* Remove border */
     padding: 10px 20px; /* Button padding */
@@ -197,7 +197,7 @@ margin-top: 10px;
 }
 
 .more-info-button:hover {
-    background-color: #805; /* Button background color on hover */
+    background-color: #89cff0 ; /* Button background color on hover */
 }
 .more-info-button.underline {
     text-decoration: underline; /* Underline text */
@@ -234,21 +234,21 @@ margin-top: 10px;
     font-size: 8px;
 }
 .main-footer {
-    background-color: #609;
+    background-color: #89cff0 ;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     font-size: 20px;
 }
 .skin-products-footer {
-    background-color: #609;
+    background-color: #89cff0 ;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     font-size: 20px;
 }
 .hair-products-footer {
-    background-color: #609;
+    background-color: #89cff0 ;
     color: #fff;
     text-align: center;
     padding: 10px 0;
