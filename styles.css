@@ -127,6 +127,22 @@ main {
 
 .option h3 {
     font-size: 15px; /* Adjusted font size for options */
+    color: #89cff0
+    text-decoration-color: #89cff0; /* Replace with your desired underline color */
+
+}
+/* Change the color of the text and underline under the first image (Skin Products) */
+.option:first-child h3 {
+    color: #89cff0; /* Replace with your desired text color */
+    text-decoration: underline; /* Apply underline */
+    text-decoration-color: #89cff0; /* Replace with your desired underline color */
+}
+
+/* Change the color of the text and underline under the second image (Hair Products) */
+.option:nth-child(2) h3 {
+    color: #89cff0; /* Replace with your desired text color */
+    text-decoration: underline; /* Apply underline */
+    text-decoration-color: #89cff0; /* Replace with your desired underline color */
 }
 .price {
 margin-top: 10px;
