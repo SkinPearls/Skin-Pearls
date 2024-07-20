@@ -200,6 +200,35 @@ margin-top: 10px;
 .contact-button.underline {
     text-decoration: underline; /* Underline text */
 }
+
+
+
+.more-info-contact-button {
+    background-color: #89cff0 ; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 15px; /* Button font size */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-bottom: 30px;
+    
+}
+
+.more-info-contact-button {
+    background-color: #89cff0 ; /* Button background color on hover */
+}
+.more-info-contact-button {
+    text-decoration: underline; /* Underline text */
+}
+
+
+
+
+
+
+
 .more-info-button {
     background-color: #89cff0 ; /* Button background color */
     color: #fff; /* Button text color */
