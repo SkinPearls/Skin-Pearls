@@ -10,10 +10,7 @@ function showHairProducts() {
     window.location.href = "hair-products.html";
 }
 
-function showHairProducts() {
-    // Redirect to hair-products.html
-    window.location.href = "hair-products.html";
-}
+
 document.addEventListener('DOMContentLoaded', function() {
     const headingSizeSelect = document.getElementById('heading-size');
     const headingColorInput = document.getElementById('heading-color');
@@ -109,13 +106,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.more-info-contact-button');
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            const product = button.closest('.product');
-            const productName = product.querySelector('h3').textContent.trim();
-            const fileId = product.dataset.fileId;
-            const productImageUrl = encodeURIComponent(product.querySelector('img').src);
+    const contactButton = document.querySelector('.contact-button');
+
+    if (contactButton) {
+        contactButton.addEventListener('click', function() {
+            const productName = document.querySelector('header h1').textContent.trim(); // Get the product name from the header
+            const productImageUrl = encodeURIComponent(document.querySelector('.product-image img').src);
             const phoneNumber = '96171653297'; // Replace with your WhatsApp phone number
 
             // Construct the WhatsApp message with product details
@@ -127,5 +123,5 @@ document.addEventListener('DOMContentLoaded', function() {
             // Redirect to WhatsApp with the encoded message
             window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
         });
-    });
+    }
 });
