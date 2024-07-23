@@ -67,7 +67,7 @@ margin-bottom: 20px;
 .quote {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     color: #333; /* Text color */
-    border: 2px solid #89cff0; /* Border color */
+    border: 2px solid #549ED7; /* Border color */
     padding: 20px;
     margin: 0px auto 0; /* Center the quote and create a gap from the header */
 margin-bottom: 40px;
@@ -82,7 +82,7 @@ margin-bottom: 40px;
 
 
 .skin-products-header {
-    background-color: #89cff0 ;
+    background-color: #549ED7 ;
     color: #fff;
     padding: 5px  ;
     text-align: center;
@@ -93,7 +93,7 @@ font-size: 20px;
     margin: 0;
 }
 .hair-products-header {
-    background-color: #89cff0 ;
+    background-color: #549ED7 ;
     color: #fff;
     padding: 5px  ;
     text-align: center;
@@ -127,22 +127,22 @@ main {
 
 .option h3 {
     font-size: 15px; /* Adjusted font size for options */
-    color: #89cff0
-    text-decoration-color: #89cff0; /* Replace with your desired underline color */
+    color: #549ED7;
+    text-decoration-color: #549ED7; /* Replace with your desired underline color */
 
 }
 /* Change the color of the text and underline under the first image (Skin Products) */
 .option:first-child h3 {
-    color: #89cff0; /* Replace with your desired text color */
+    color: #549ED7; /* Replace with your desired text color */
     text-decoration: underline; /* Apply underline */
-    text-decoration-color: #89cff0; /* Replace with your desired underline color */
+    text-decoration-color: #549ED7; /* Replace with your desired underline color */
 }
 
 /* Change the color of the text and underline under the second image (Hair Products) */
 .option:nth-child(2) h3 {
-    color: #89cff0; /* Replace with your desired text color */
+    color: #549ED7; /* Replace with your desired text color */
     text-decoration: underline; /* Apply underline */
-    text-decoration-color: #89cff0; /* Replace with your desired underline color */
+    text-decoration-color: #549ED7; /* Replace with your desired underline color */
 }
 .price {
 margin-top: 10px;
@@ -183,7 +183,7 @@ margin-top: 10px;
     font-size: 8px;
 }
 .contact-button {
-    background-color: #89cff0 ; /* Button background color */
+    background-color: #549ED7; /* Button background color */
     color: #fff; /* Button text color */
     border: none; /* Remove border */
     padding: 10px 20px; /* Button padding */
@@ -195,7 +195,7 @@ margin-top: 10px;
 }
 
 .contact-button:hover {
-    background-color: #89cff0 ; /* Button background color on hover */
+    background-color: #549ED7; /* Button background color on hover */
 }
 .contact-button.underline {
     text-decoration: underline; /* Underline text */
@@ -204,7 +204,7 @@ margin-top: 10px;
 
 
 .more-info-contact-button {
-    background-color: #89cff0 ; /* Button background color */
+    background-color: #549ED7; /* Button background color */
     color: #fff; /* Button text color */
     border: none; /* Remove border */
     padding: 10px 20px; /* Button padding */
@@ -217,7 +217,7 @@ margin-top: 10px;
 }
 
 .more-info-contact-button {
-    background-color: #89cff0 ; /* Button background color on hover */
+    background-color: #549ED7; /* Button background color on hover */
 }
 .more-info-contact-button {
     text-decoration: underline; /* Underline text */
@@ -230,7 +230,7 @@ margin-top: 10px;
 
 
 .more-info-button {
-    background-color: #89cff0 ; /* Button background color */
+    background-color: #549ED7; /* Button background color */
     color: #fff; /* Button text color */
     border: none; /* Remove border */
     padding: 10px 20px; /* Button padding */
@@ -242,7 +242,7 @@ margin-top: 10px;
 }
 
 .more-info-button:hover {
-    background-color: #89cff0 ; /* Button background color on hover */
+    background-color: #549ED7; /* Button background color on hover */
 }
 .more-info-button.underline {
     text-decoration: underline; /* Underline text */
@@ -279,21 +279,21 @@ margin-top: 10px;
     font-size: 8px;
 }
 .main-footer {
-    background-color: #89cff0 ;
+    background-color: #549ED7;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     font-size: 20px;
 }
 .skin-products-footer {
-    background-color: #89cff0 ;
+    background-color: #549ED7;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     font-size: 20px;
 }
 .hair-products-footer {
-    background-color: #89cff0 ;
+    background-color: #549ED7;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -408,7 +408,7 @@ accordion {
             left: 10px; /* Position the arrow on the left */
             transform: translateY(-50%);
             transition: transform 0.3s ease;
-            color: #89cff0 ; /* Arrow color */
+            color: #549ED7; /* Arrow color */
         }
         .accordion-body {
             padding: 10px;
