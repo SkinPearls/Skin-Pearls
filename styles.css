@@ -20,7 +20,7 @@ body {
 
 /* Header styles */
 .main-header {
-    background-color: #89cff0;
+    background-color: #055FA4;
     color: #fff;
     padding:  40px;
     text-align: center;
@@ -408,7 +408,7 @@ accordion {
             left: 10px; /* Position the arrow on the left */
             transform: translateY(-50%);
             transition: transform 0.3s ease;
-            color: #609; /* Arrow color */
+            color: #89cff0 ; /* Arrow color */
         }
         .accordion-body {
             padding: 10px;
