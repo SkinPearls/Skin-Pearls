@@ -435,4 +435,6 @@ accordion {
     padding: 10px;
     text-align: center;
 font-size: 15px;
+    font-weight: bold; /* Makes the text bold */
+
 }
