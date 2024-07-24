@@ -431,3 +431,8 @@ accordion {
     padding: 10px; /* Add padding for spacing */
     border: 1px solid #ccc; /* Optional: Add border for clarity */
 }
+.highlight {
+    padding: 10px;
+    text-align: center;
+font-size: 15px;
+}
