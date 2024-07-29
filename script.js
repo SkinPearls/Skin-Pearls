@@ -1,4 +1,5 @@
-// script.js
+// script.js.
+
 
 function showSkinProducts() {
     // Redirect to skin-products.html
@@ -125,3 +126,138 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+const menuButton = document.getElementById('menuButton');
+const panel = document.getElementById('panel');
+
+menuButton.addEventListener('click', () => {
+    panel.classList.toggle('open');
+});
+// Function to close the panel
+function closePanel() {
+    panel.classList.remove('open');
+}
+
+// Add event listener to close panel when clicking outside
+document.addEventListener('click', (event) => {
+    if (!panel.contains(event.target) && !menuButton.contains(event.target)) {
+        closePanel();
+    }
+});
+let myCart = JSON.parse(localStorage.getItem('myCart')) || []; // Initialize the buy list from localStorage
+
+// Function to toggle the star
+function toggleStar(element) {
+    const product = element.closest('.product');
+    const productName = product.getAttribute('data-name');
+    const productPrice = product.getAttribute('data-price');
+    const productImage = product.getAttribute('data-image');
+
+    element.classList.toggle('active');
+
+    if (element.classList.contains('active')) {
+        // Add to my cart
+        if (!myCart.some(item => item.name === productName)) {
+            myCart.push({
+                name: productName,
+                image: productImage,
+                price: productPrice
+            });
+localStorage.setItem('myCart', JSON.stringify(myCart)); // Save to localStorage
+            updateMyCartPage(); // Update the cart panel dynamically
+            showNotification('This product has been added to your cart'); // Show notification
+        
+        }
+   } else {
+        // Remove from cart
+        myCart = myCart.filter(item => item.name !== productName);
+        localStorage.setItem('myCart', JSON.stringify(myCart)); // Save to localStorage
+        updateMyCartPage(); // Update the cart panel dynamically
+        showNotification('This product has been removed from your cart'); // Show notification
+    }
+}
+
+// Function to update the My Cart HTML page
+function updateMyCartPage() {
+    const myCartContainer = document.getElementById('my-cart-container');
+    if (myCartContainer) {
+        myCartContainer.innerHTML = '';
+
+        myCart.forEach((item, index) => {
+            const listItem = document.createElement('div');
+            listItem.classList.add('cart-item');
+            listItem.innerHTML = `
+                <h3>${item.name}</h3>
+                
+                <button class="remove-button" onclick="removeFromCart(${index})">Remove</button>
+            `;
+            myCartContainer.appendChild(listItem);
+        });
+    }
+}
+
+// Function to remove a product from the cart
+function removeFromCart(index) {
+    const removedProduct = myCart[index].name;
+    myCart.splice(index, 1);
+    localStorage.setItem('myCart', JSON.stringify(myCart)); // Update localStorage
+    updateMyCartPage(); // Update the cart display
+
+    // Turn off the star icon for the removed product
+    const product = document.querySelector(`.product[data-name="${removedProduct}"]`);
+    if (product) {
+        const starIcon = product.querySelector('.star-icon');
+        starIcon.classList.remove('active'); // Turn off the star
+    }
+}
+
+// Function to toggle the panel visibility
+function togglePanel() {
+    const panel = document.getElementById('panel');
+    if (panel.classList.contains('open')) {
+        panel.classList.remove('open');
+    } else {
+        panel.classList.add('open');
+    }
+}
+
+// Function to close the panel
+function closePanel() {
+    const panel = document.getElementById('panel');
+    panel.classList.remove('open');
+}
+
+// Add event listener to close panel when clicking outside
+document.addEventListener('click', (event) => {
+    const panel = document.getElementById('panel');
+    const menuButton = document.getElementById('menuButton');
+    if (!panel.contains(event.target) && !menuButton.contains(event.target)) {
+        closePanel();
+    }
+});
+
+// Call updateMyCartPage to initialize the My Cart display on page load
+document.addEventListener('DOMContentLoaded', () => {
+    updateMyCartPage();
+
+    // Restore star states based on the My Cart
+    document.querySelectorAll('.product').forEach(product => {
+        const productName = product.getAttribute('data-name');
+        const starIcon = product.querySelector('.star-icon');
+        if (myCart.some(item => item.name === productName)) {
+            starIcon.classList.add('active');
+        }
+    });
+});
+// Function to show notification
+function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.textContent = message;
+
+    document.body.appendChild(notification);
+
+    // Remove notification after 3 seconds
+    setTimeout(() => {
+        notification.remove();
+    }, 2000);
+}

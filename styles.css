@@ -436,5 +436,210 @@ accordion {
     text-align: center;
 font-size: 15px;
     font-weight: bold; /* Makes the text bold */
+}
+/* Header styles */
+.menu-button {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto; /* Align to the right */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
 
+.menu-button div {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+
+.panel {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s;
+    z-index: 1000; /* Add z-index to ensure it is on top */
+
+}
+
+.panel.open {
+    right: 0;
+}
+
+.my-cart-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #549ED7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.my-cart-button:hover {
+    background-color: #45a049;
+}
+/* Product image container */
+.product-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* Star icon styles */
+.product-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.star-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.star-icon.active {
+    color: yellow;
+}
+
+/* Other styles */
+.menu-button {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto; /* Align to the right */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.menu-button div {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+
+.panel {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s;
+}
+
+.panel.open {
+    right: 0;
+}
+
+.my-cart-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.my-cart-button:hover {
+    background-color: #45a049;
+}
+/* Style the my cart container */
+#my-cart-container {
+    padding: 10px;
+}
+
+/* Style each item in the my cart */
+#my-cart-container div {
+    margin-bottom: 10px; /* Adjust the spacing as needed */
+    padding: 5px;
+    background-color: #f9f9f9; /* Optional: Add background color for clarity */
+    border: 1px solid #ddd; /* Optional: Add border for clarity */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+font-size: 10px;
+}
+
+.remove-button {
+    background-color: #549ED7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.remove-button:hover {
+    background-color: #cc0000;
+}
+.my-cart-button {
+    background-color: #549ED7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+#menuButton {
+    position: absolute;
+   width: 25px; /* Adjust width */
+    height: 30px; /* Adjust height */
+    right: 10px;
+    top: 30px;
+    cursor: pointer;
+}
+.notification {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #549ED7;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    z-index: 1000;
+    font-size: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+}
+.notification.show {
+    opacity: 1;
+}
+
+/* Optionally, add animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.notification {
+    animation: fadeIn 0.5s ease-in-out;
 }
