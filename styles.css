@@ -266,17 +266,19 @@ margin-top: 10px;
     gap: 10px; /* Adjust the gap between products */
     width: 100%;
     max-width: 800px; /* Adjust the max-width as needed */
-
+margin-bottom: 80px;
 
 }
 .product {
     position: relative;
+    display: inline-block; /* Allows the container to fit the image */
+    width: 300px; /* Adjust the width as needed */
+
     border: 1px solid #ccc;
-    padding: 16px;
-    margin: 16px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 8px;
     text-align: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 
 }
 .hair-products .product img {
@@ -519,7 +521,7 @@ font-size: 15px;
 .star-icon {
     position: absolute;
     top: 110px;
-    right: 40px;
+    right: 50%;
     font-size: 20px;
     color: #549ED7;
     cursor: pointer;
