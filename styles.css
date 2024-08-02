@@ -261,18 +261,27 @@ margin-top: 10px;
     gap: 10px; /* Adjust the gap between products */
     width: 100%;
     max-width: 800px; /* Adjust the max-width as needed */
+
+
 }
-.hair-products .product {
+.product {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
     text-align: center;
-    width: calc(50% - 10px); /* Adjusted width with margin space */
-    margin: 0 0 50px; /* Margin around each product */
 
 }
 .hair-products .product img {
     width: 100px; /* Make the image fill its container */
     height: 100px; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure images cover the area without distortion */
+margin-bottom: 40px;
+
 }
+
 
 .hair-products .product h3 {
     margin-top: 10px;
@@ -429,7 +438,7 @@ accordion {
 .product {
     width: 45%; /* Adjust width of each product */
     padding: 10px; /* Add padding for spacing */
-    border: 1px solid #ccc; /* Optional: Add border for clarity */
+    border: 1px solid #fff; /* Optional: Add border for clarity */
 }
 .highlight {
     padding: 10px;
@@ -504,12 +513,14 @@ font-size: 15px;
 
 .star-icon {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 110px;
+    right: 100px;
     font-size: 24px;
-    color: white;
+    color: #549ED7;
     cursor: pointer;
     z-index: 10;
+    transition: color 0.3s;
+
 }
 
 .star-icon.active {
@@ -556,7 +567,7 @@ font-size: 15px;
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #549ED7;
     color: white;
     border: none;
     cursor: pointer;
