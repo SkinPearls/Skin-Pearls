@@ -514,8 +514,8 @@ font-size: 15px;
 .star-icon {
     position: absolute;
     top: 110px;
-    right: 35px;
-    font-size: 24px;
+    right: 40px;
+    font-size: 20px;
     color: #549ED7;
     cursor: pointer;
     z-index: 10;
@@ -557,6 +557,8 @@ font-size: 15px;
     background-color: #f4f4f4;
     box-shadow: -2px 0 5px rgba(0,0,0,0.5);
     transition: right 0.3s;
+    overflow-y: auto; /* Enable vertical scrolling */
+
 }
 
 .panel.open {

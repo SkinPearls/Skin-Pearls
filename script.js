@@ -261,3 +261,16 @@ function showNotification(message) {
         notification.remove();
     }, 2000);
 }
+// Call updateMyCartPanel to initialize the My Cart display on page load
+document.addEventListener('DOMContentLoaded', () => {
+    updateMyCartPanel();
+
+    // Restore star states based on the My Cart
+    document.querySelectorAll('.product').forEach(product => {
+        const productName = product.getAttribute('data-name');
+        const starIcon = product.querySelector('.star-icon');
+        if (myCart.some(item => item.name === productName)) {
+            starIcon.classList.add('active');
+        }
+    });
+});
