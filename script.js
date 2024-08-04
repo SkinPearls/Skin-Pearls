@@ -197,17 +197,23 @@ function updateMyCartPage() {
 
 // Function to remove a product from the cart
 function removeFromCart(index) {
-    const removedProduct = myCart[index].name;
+    const productName = myCart[index].name;
     myCart.splice(index, 1);
     localStorage.setItem('myCart', JSON.stringify(myCart)); // Update localStorage
     updateMyCartPage(); // Update the cart display
 
-    // Turn off the star icon for the removed product
-    const product = document.querySelector(`.product[data-name="${removedProduct}"]`);
-    if (product) {
-        const starIcon = product.querySelector('.star-icon');
-        starIcon.classList.remove('active'); // Turn off the star
-    }
+    // Also turn off the star for this product
+    document.querySelectorAll('.product').forEach(product => {
+        if (product.getAttribute('data-name') === productName) {
+            const starIcon = product.querySelector('.star-icon');
+            if (starIcon) {
+                starIcon.classList.remove('active');
+            }
+        }
+    });
+
+    // Show notification
+    showNotification('This product has been removed from your cart');
 }
 
 // Function to toggle the panel visibility

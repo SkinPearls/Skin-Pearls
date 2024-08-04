@@ -83,10 +83,16 @@ margin-bottom: 40px;
 
 .skin-products-header {
     background-color: #549ED7 ;
+    position: fixed;
+top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     color: #fff;
     padding: 5px  ;
     text-align: center;
 font-size: 10px;
+
 }
 
 .skin-products-header h1 {
@@ -114,6 +120,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    padding-top: 60px; /* Adjust this value as needed */
+
 }
 
 .options {
@@ -171,16 +179,13 @@ margin-top: 10px;
     width: 100%;
     max-width: 800px; /* Adjust the max-width as needed */
 }
-.skin-products .product {
-    text-align: center;
-    width: calc(50% - 10px); /* Adjusted width with margin space */
-    margin: 0 0 50px; /* Margin around each product */
 
-}
 .skin-products .product img {
     width: 100px; /* Make the image fill its container */
     height: 100px; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure images cover the area without distortion */
+margin-bottom: 40px;
+
 }
 
 .skin-products .product h3 {
@@ -228,12 +233,6 @@ margin-top: 10px;
     text-decoration: underline; /* Underline text */
 }
 
-
-
-
-
-
-
 .more-info-button {
     background-color: #549ED7; /* Button background color */
     color: #fff; /* Button text color */
@@ -266,19 +265,14 @@ margin-top: 10px;
     gap: 10px; /* Adjust the gap between products */
     width: 100%;
     max-width: 800px; /* Adjust the max-width as needed */
-margin-bottom: 80px;
 
 }
 .product {
     position: relative;
     display: inline-block; /* Allows the container to fit the image */
-    width: 300px; /* Adjust the width as needed */
-
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
     text-align: center;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: calc(50% - 10px); /* Adjusted width with margin space */
+    margin: 0 0 50px; /* Margin around each product */
 
 }
 .hair-products .product img {
